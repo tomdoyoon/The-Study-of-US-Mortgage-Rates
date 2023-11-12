@@ -52,13 +52,13 @@ Hypothesis Test 1.2: There are no differences between the correlations of all in
 
 
 Hypothesis Test 1.3: There are no differences between the correlations of yield spreads with 30Yr Mortgage rates during the two-year period leading up to a recession (Pre-GFC, Pre-Dot-Com) and the periods of recessions (GFC, Dot-Com). (Fisher’s Z Transformation).
--	1.3.1: All yield curves had a statistically significant difference between their correlations with M30Y during the two-year period leading up to the GFC and during the GFC (See figure 8).
--	1.3.2: All yield curves except for A-B had a statistically significant difference between their correlations with M30Y during the two-year period leading up to the Dot-Com and during the Dot-Com (See figure 9).
+-	1.3.1: All yield spreads had a statistically significant difference between their correlations with M30Y during the two-year period leading up to the GFC and during the GFC (See figure 8).
+-	1.3.2: All yield spreads except for A-B had a statistically significant difference between their correlations with M30Y during the two-year period leading up to the Dot-Com and during the Dot-Com (See figure 9).
 -	Overall 1.3: See figure 10.
 
 Hypothesis Test 1.4: There are no differences between the correlations of yield spreads with 30Yr Mortgage rates during the two-year period leading up to a recession (Pre-GFC, Pre-Dot-Com) and the recoveries of recessions (GFC Recovery, Dot-Com Recovery). (Fisher’s Z Transformation).
--	1.4.1: All yield curves except A-T10 had a statistically significant difference between their correlations with M30Y during the two-year period leading up to the Dot-Com and the Dot-Com recovery (See figure 11).
--	1.4.2: All yield curves had a statistically significant difference between their correlations with M30Y during the two-year period leading up to the GFC and during the GFC Recovery (See figure 12).
+-	1.4.1: All yield spreads except A-T10 had a statistically significant difference between their correlations with M30Y during the two-year period leading up to the Dot-Com and the Dot-Com recovery (See figure 11).
+-	1.4.2: All yield spreads had a statistically significant difference between their correlations with M30Y during the two-year period leading up to the GFC and during the GFC Recovery (See figure 12).
 -	Overall 1.4: See figure 13.
 
 
