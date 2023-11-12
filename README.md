@@ -90,3 +90,51 @@ Time Series Decomposition:
 
 Hypothesis Test 4.1: The residuals from the Seasonal Period of two years follow a normal distribution.
 -	Statistic of 28.6 with critical values of 1.09 for 1% significance.
+
+# Model Evaluation
+
+All machine learning models were set with the following parameters:
+-	Output variable: Next week’s M30Y
+-	Input variables: This week’s data points
+-	Test size: 20%, shuffle = False
+
+# Stationary Modeling
+
+Due to importance of multicollinearity in stationary modeling, features that scored higher than 10 on the VIF test were dropped (T10-2, T10-F, and A-B, see figure 17).
+
+Input variables: 
+-	Differenced M30Y, T10Y, T2Y, FED, AAA, BAA
+-	Non-differenced A-T10
+
+SARIMAX
+-	Grid search obtained the optimal P, D, Q parameters: 1, 0, 1 and M was set to 104 (two years, 52*2).
+-	Poor performance MSE: 0.0096, RMSE: 0.098, MAE: 0.066768
+
+Random Forest
+-	N_estimators = 500, max_depth = 5
+-	Poor performance: MSE: 0.00661, RMSE: 0.0813, MAE: 0.05398
+
+# Non-stationary Modeling
+Input variables:
+-	Non-differenced independent variables
+
+Random Forest
+-	N_estimators = 50, max_depth = 5
+-	Very good performance: MSE: 0.25763, RMSE: 0.5075793, MAE: 0.42292
+
+LSTM Deep Learning
+-	Window for observations = 11, two hidden layers (LSTM 32, Dense ‘relu’ 16), Adam optimizer with a learning rate of .001, 50 epochs, early stopping patience = 10
+-	Excellent performance: MSE: 0.02622, RMSE: 0.161951, MAE: 0.12432
+
+# Forward Testing Non-Stationary Models
+
+5 weeks of new data
+
+Random Forest
+-	MSE: 0.759, RMSE: 0.8712, MAE: 0.8697
+-	Predictions were adequate, with a Relative RMSE of 11.4%.
+
+LSTM
+-	MSE: 0.08275, RMSE: 0.2876, MAE: 0.28486
+-	Predictions were good, with a Relative RMSE of 3.8%.
+
