@@ -38,6 +38,7 @@ The project concludes with a series of machine learning applications predicting 
 
 Hypothesis Test 1.1: There is no difference between the correlation using the Aaa-10Y Treasury from 50Wks ago with this week's 30Yr Mortgage and using the Aaa-10Y Treasury from 2Wks ago with this week's 30Yr Mortgage (Fisher’s Z Transformation).
 -	50Wks Correlation: -.714, 2Wks Correlation: -.689, P-value: .083
+-	See figure 0.
 
 Hypothesis Test 1.2: There are no differences between the correlations all independent variables with 30Yr Mortgage rates during the recent recoveries (COVID, GFC, Dot-Com) and the historical recoveries (80s Recession, Gulf War) (Fisher’s Z Transformation).
 -	1.2.1: All independent variables except for the FED and T10-F had a statistically significant difference between their correlations with M30Y during the COVID Recovery and during the 80s Recovery (See figure 1).
