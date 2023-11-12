@@ -33,6 +33,7 @@ The project concludes with a series of machine learning applications predicting 
 -	Statistical and Data Analysis: A series of 10 hypothesis tests surrounding correlation, cointegration, and volatility.
 -	Machine Learning: Stationary and non-stationary forecasting.
 -	Forward Testing: Forward testing with five weeks of unseen data.
+-	Exhibits: A folder of figures.
 
 # Observations and Findings
 
